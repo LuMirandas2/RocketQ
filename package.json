@@ -1,0 +1,19 @@
+{
+  "name": "rocketq",
+  "version": "1.0.0",
+  "description": "### Desenvolvido Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuMirandas2/RocketQ.git"
+  },
+  "author": "Luanna Alves Miranda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuMirandas2/RocketQ/issues"
+  },
+  "homepage": "https://github.com/LuMirandas2/RocketQ#readme"
+}

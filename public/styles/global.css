@@ -7,21 +7,26 @@
 }
 
 html {
-  --black: #0b114f;
+  --black: #0d114f;
   --white: #fafafa;
-  --red: #e83f5b;
+  --red: #e83f58;
   --light-blue: #e0ecff;
   --blue: #3485ff;
   --background: #f6faff;
   --overlay: #040911;
-  --icons-datails: #a5b0c1;
+  --icons-details: #a5b0c1;
+
   --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
   --grey-light: #e5eaf1;
-  font-size: 62.5%;
+  --grey-medium: #eaecf2;
+
+  /* 1rem = 16px (User Agent) = 100% (User Agent)*/
+  font-size: 62.5%; /* Foi definido 62.5 pq equivale a 10px, o que torna a divisão por 10 mais fácil e prática. */
 }
 
 body {
+  display: flex;
   height: 100vh;
   background: var(--background);
 }
@@ -31,7 +36,7 @@ button,
 input,
 textarea {
   font-size: clamp(14px, 1.6rem, 2vw);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content {
@@ -51,6 +56,7 @@ textarea {
   border-width: 0;
 }
 
+/*------ input and buttons --------*/
 input,
 button,
 .button {
@@ -60,20 +66,24 @@ button,
 
 button,
 .button {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: var(--blue);
   color: var(--white);
-  transition: filter 0.2s;
+
   cursor: pointer;
+
+  transition: filter 0.2s;
 }
 
-.button:hover,
-button:hover {
+button:hover,
+.button:hover {
   filter: brightness(1.2);
 }
 
@@ -90,6 +100,19 @@ button.outlined,
   border: 0.2rem solid var(--blue);
 }
 
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey {
+  background: var(--grey-light);
+  background: var(--grey-dark);
+}
+
+/*-------------------------------- HEADER -------------------------------*/
 .content header {
   width: 80%;
   margin: 3.5rem auto;
